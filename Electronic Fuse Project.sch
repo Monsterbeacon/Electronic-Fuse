@@ -1,0 +1,781 @@
+*version 9.2 141390271
+u 672
+TX? 2
+V? 2
+D? 14
+C? 7
+R? 15
+U? 5
+Q? 3
+? 20
+@libraries
+@analysis
+.TRAN 1 0 0 0
++0 100ms
++1 14s
++3 50ms
+.LIB E:\BUET\Level-2, Term-2\Projects\Electronics (Simulation)\Project File (Schematics)\Electronic Fuse Project.lib
+@targets
+@attributes
+@translators
+a 0 u 13 0 0 0 hln 100 PCBOARDS=PCB
+a 0 u 13 0 0 0 hln 100 PSPICE=PSPICE
+a 0 u 13 0 0 0 hln 100 XILINX=XILINX
+@setup
+unconnectedPins 0
+connectViaLabel 0
+connectViaLocalLabels 0
+NoStim4ExtIFPortsWarnings 1
+AutoGenStim4ExtIFPorts 1
+@index
+pageloc 1 0 14454 
+@status
+c 122:07:26:19:50:12;1661521812
+n 0 122:07:26:19:50:15;1661521815 e 
+s 2832 122:07:26:19:50:18;1661521818 e 
+*page 1 0 1520 970 iB
+@ports
+port 78 GND_EARTH 880 140 u
+port 103 GND_EARTH 1040 270 u
+port 4 GND_EARTH 370 270 h
+port 134 GND_EARTH 650 450 u
+port 306 GND_EARTH 1340 580 h
+@parts
+part 20 D1N4001 710 170 u
+a 0 sp 11 0 15 25 hln 100 PART=D1N4001
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DO-41
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 x 0:13 0 0 0 hln 100 PKGREF=D1
+a 0 xp 9 0 15 0 hln 100 REFDES=D1
+part 21 D1N4001 680 270 h
+a 0 sp 11 0 15 25 hln 100 PART=D1N4001
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DO-41
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 x 0:13 0 0 0 hln 100 PKGREF=D3
+a 0 xp 9 0 15 0 hln 100 REFDES=D3
+part 63 1N4099 880 230 v
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DO-7
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 a 0:13 0 0 0 hln 100 PKGREF=D5
+a 0 ap 9 0 0 0 hln 100 REFDES=D5
+a 0 sp 11 0 12 52 hln 100 PART=1N4099
+a 0 u 0 0 0 10 hln 100 VALUE=
+part 51 c 650 240 v
+a 0 u 13 0 15 45 hln 100 VALUE=100uF
+a 0 sp 0 0 0 10 hlb 100 PART=c
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=CK05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 a 0:13 0 0 0 hln 100 PKGREF=C1
+a 0 ap 9 0 15 0 hln 100 REFDES=C1
+a 0 u 0 0 0 0 hln 100 IC=0
+part 3 VSIN 330 200 h
+a 0 a 0:13 0 0 0 hln 100 PKGREF=V1
+a 1 ap 9 0 20 10 hcn 100 REFDES=V1
+a 1 u 0 0 0 0 hcn 100 VOFF=0
+a 1 u 0 0 0 0 hcn 100 FREQ=50
+a 1 u 0 0 0 0 hcn 100 VAMPL=240V
+part 19 D1N4001 590 270 u
+a 0 sp 11 0 15 25 hln 100 PART=D1N4001
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DO-41
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 x 0:13 0 0 0 hln 100 PKGREF=D4
+a 0 xp 9 0 15 0 hln 100 REFDES=D4
+part 18 D1N4001 560 170 h
+a 0 sp 11 0 15 25 hln 100 PART=D1N4001
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DO-41
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 x 0:13 0 0 0 hln 100 PKGREF=D2
+a 0 xp 9 0 15 0 hln 100 REFDES=D2
+part 172 c 370 560 v
+a 0 u 13 0 11 41 hln 100 VALUE=500uF
+a 0 sp 0 0 0 10 hlb 100 PART=c
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=CK05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 x 0:13 0 0 0 hln 100 PKGREF=C2
+a 0 xp 9 0 15 0 hln 100 REFDES=C2
+a 0 u 0 0 0 0 hln 100 IC=0
+part 144 R 460 530 v
+a 0 u 13 0 15 29 hln 100 VALUE=500
+a 0 sp 0 0 0 10 hlb 100 PART=R
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 a 0:13 0 0 0 hln 100 PKGREF=R5
+a 0 ap 9 0 15 0 hln 100 REFDES=R5
+part 145 R 460 640 v
+a 0 u 13 0 17 31 hln 100 VALUE=500
+a 0 sp 0 0 0 10 hlb 100 PART=R
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 a 0:13 0 0 0 hln 100 PKGREF=R6
+a 0 ap 9 0 15 0 hln 100 REFDES=R6
+part 205 BC177 920 580 U
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=TO-18
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 a 0:13 0 0 0 hln 100 PKGREF=Q1
+a 0 ap 9 0 5 5 hln 100 REFDES=Q1
+a 0 sp 11 0 13 44 hln 100 PART=BC177
+part 81 uA741 1000 300 h
+a 0 sp 11 0 0 70 hcn 100 PART=uA741
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DIP8
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 a 0:13 0 0 0 hln 100 PKGREF=U1
+a 0 ap 9 0 14 0 hln 100 REFDES=U1
+part 239 BC108A 1100 640 h
+a 0 sp 11 0 -11 42 hln 100 PART=BC108A
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=TO-18
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 a 0:13 0 0 0 hln 100 PKGREF=Q2
+a 0 ap 9 0 5 5 hln 100 REFDES=Q2
+part 250 Relay_DPDT_b 1180 570 V
+a 0 a 0:13 0 0 0 hln 100 PKGREF=U3
+a 0 sp 11 0 54 134 hln 100 PART=Relay_DPDT_b
+a 0 ap 9 0 0 8 hln 100 REFDES=U3
+part 216 R 940 530 v
+a 0 sp 0 0 0 10 hlb 100 PART=R
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 a 0:13 0 0 0 hln 100 PKGREF=R10
+a 0 ap 9 0 15 0 hln 100 REFDES=R10
+a 0 u 13 0 17 29 hln 100 VALUE=1k
+part 113 uA741 610 560 h
+a 0 sp 11 0 0 70 hcn 100 PART=uA741
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DIP8
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 a 0:13 0 0 0 hln 100 PKGREF=U2
+a 0 ap 9 0 14 0 hln 100 REFDES=U2
+part 337 R 350 170 h
+a 0 sp 0 0 0 10 hlb 100 PART=R
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 x 0:13 0 0 0 hln 100 PKGREF=R1
+a 0 xp 9 0 15 0 hln 100 REFDES=R1
+part 58 R 840 140 u
+a 0 u 13 0 15 25 hln 100 VALUE=100k
+a 0 sp 0 0 0 10 hlb 100 PART=R
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 x 0:13 0 0 0 hln 100 PKGREF=R2
+a 0 xp 9 0 15 0 hln 100 REFDES=R2
+part 632 R 290 570 v
+a 0 sp 0 0 0 10 hlb 100 PART=R
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 u 13 0 15 25 hln 100 VALUE=1
+a 0 x 0:13 0 0 0 hln 100 PKGREF=R4
+a 0 xp 9 0 15 0 hln 100 REFDES=R4
+part 640 D1N4001 340 660 u
+a 0 sp 11 0 15 25 hln 100 PART=D1N4001
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DO-41
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 x 0:13 0 0 0 hln 100 PKGREF=D6
+a 0 xp 9 0 15 0 hln 100 REFDES=D6
+part 131 R 560 530 v
+a 0 u 13 0 19 29 hln 100 VALUE=100
+a 0 sp 0 0 0 10 hlb 100 PART=R
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 x 0:13 0 0 0 hln 100 PKGREF=R7
+a 0 xp 9 0 15 0 hln 100 REFDES=R7
+part 122 R 560 670 v
+a 0 u 13 0 19 29 hln 100 VALUE=10k
+a 0 sp 0 0 0 10 hlb 100 PART=R
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 x 0:13 0 0 0 hln 100 PKGREF=R8
+a 0 xp 9 0 15 0 hln 100 REFDES=R8
+part 191 R 740 580 h
+a 0 sp 0 0 0 10 hlb 100 PART=R
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 u 13 0 15 25 hln 100 VALUE=22k
+a 0 x 0:13 0 0 0 hln 100 PKGREF=R9
+a 0 xp 9 0 15 0 hln 100 REFDES=R9
+part 639 c 820 530 v
+a 0 sp 0 0 0 10 hlb 100 PART=c
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=CK05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 u 13 0 13 43 hln 100 VALUE=500uF
+a 0 u 0 0 0 0 hln 100 IC=0
+a 0 x 0:13 0 0 0 hln 100 PKGREF=C3
+a 0 xp 9 0 15 0 hln 100 REFDES=C3
+part 631 R 980 620 v
+a 0 sp 0 0 0 10 hlb 100 PART=R
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 u 13 0 21 29 hln 100 VALUE=1k
+a 0 x 0:13 0 0 0 hln 100 PKGREF=R11
+a 0 xp 9 0 15 0 hln 100 REFDES=R11
+part 215 R 1020 640 h
+a 0 sp 0 0 0 10 hlb 100 PART=R
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 u 13 0 15 25 hln 100 VALUE=10k
+a 0 x 0:13 0 0 0 hln 100 PKGREF=R12
+a 0 xp 9 0 15 0 hln 100 REFDES=R12
+part 277 D1N4001 1240 550 v
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DO-41
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 sp 11 0 1 45 hln 100 PART=D1N4001
+a 0 x 0:13 0 0 0 hln 100 PKGREF=D7
+a 0 xp 9 0 15 0 hln 100 REFDES=D7
+part 106 R 750 410 h
+a 0 sp 0 0 0 10 hlb 100 PART=R
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 x 0:13 0 0 0 hln 100 PKGREF=R3
+a 0 xp 9 0 15 0 hln 100 REFDES=R3
+a 0 u 13 0 15 25 hln 100 VALUE=100
+part 628 D1N4001 1340 520 d
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DO-41
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 sp 11 0 23 49 hln 100 PART=D1N4001
+a 0 x 0:13 0 0 0 hln 100 PKGREF=D8
+a 0 xp 9 0 15 0 hln 100 REFDES=D8
+part 2 XFRM_LINEAR 410 190 h
+a 0 u 0 0 0 0 hln 100 L2_VALUE=1uH
+a 0 sp 0 0 0 10 hlb 100 PART=XFRM_LINEAR
+a 0 a 0:13 0 0 0 hln 100 PKGREF=TX1
+a 0 ap 9 0 12 -4 hln 100 REFDES=TX1
+a 0 u 0 0 0 0 hln 100 L1_VALUE=256uH
+part 1 titleblk 1520 970 h
+a 1 s 13 0 350 10 hcn 100 PAGESIZE=B
+a 1 s 13 0 180 60 hcn 100 PAGETITLE=
+a 1 s 13 0 340 95 hrn 100 PAGECOUNT=1
+a 1 s 13 0 300 95 hrn 100 PAGENO=1
+part 671 iMarker 1340 520 h
+a 0 s 0 0 0 0 hln 100 PROBEVAR=
+a 0 a 0 0 6 20 hlb 100 LABEL=19
+@conn
+w 65
+a 0 up 0:33 0 0 0 hln 100 V=
+s 880 140 880 200 66
+a 0 up 33 0 882 170 hlt 100 V=
+s 840 140 880 140 64
+w 105
+a 0 up 0:33 0 0 0 hln 100 V=
+s 1040 270 1040 290 104
+a 0 up 33 0 1042 280 hlt 100 V=
+w 315
+a 0 up 0:33 0 0 0 hln 100 V=
+s 330 270 370 270 13
+s 330 240 330 270 11
+s 370 270 410 270 15
+a 0 up 33 0 390 269 hct 100 V=
+s 410 270 410 250 16
+w 316
+a 0 up 0:33 0 0 0 hln 100 V=
+s 410 170 410 190 9
+s 390 170 410 170 338
+a 0 up 33 0 400 169 hct 100 V=
+w 27
+a 0 up 0:33 0 0 0 hln 100 V=
+s 650 170 680 170 54
+s 650 170 650 210 52
+s 650 170 650 140 59
+s 650 140 800 140 61
+a 0 up 33 0 725 139 hct 100 V=
+s 590 170 650 170 26
+w 236
+a 0 up 0:33 0 0 0 hln 100 V=
+s 940 640 1020 640 237
+a 0 up 33 0 980 639 hct 100 V=
+s 940 600 940 640 235
+w 241
+a 0 up 0:33 0 0 0 hln 100 V=
+s 1060 640 1100 640 556
+a 0 up 33 0 1090 639 hct 100 V=
+w 569
+a 0 up 0:33 0 0 0 hln 100 V=
+s 1180 630 1180 570 292
+s 1390 630 1180 630 290
+s 790 410 1390 410 286
+a 0 up 33 0 1090 409 hct 100 V=
+s 1390 410 1390 630 288
+w 308
+a 0 up 0:33 0 0 0 hln 100 V=
+s 1340 580 1340 550 567
+a 0 up 33 0 1342 560 hlt 100 V=
+w 463
+a 0 up 0:33 0 0 0 hln 100 V=
+s 1210 500 1130 500 273
+s 1130 500 1130 510 275
+s 1120 570 1120 590 256
+s 1210 590 1210 500 492
+s 1120 590 1210 590 268
+a 0 up 33 0 1212 585 hlt 100 V=
+s 1240 590 1240 550 280
+s 1210 590 1240 590 464
+s 1120 590 1120 620 493
+w 223
+a 0 up 0:33 0 0 0 hln 100 V=
+s 940 530 940 540 222
+s 940 540 980 540 224
+s 940 540 940 560 503
+s 980 540 980 580 227
+a 0 up 33 0 982 560 hlt 100 V=
+w 193
+a 0 up 0:33 0 0 0 hln 100 V=
+s 740 580 690 580 636
+a 0 up 33 0 690 579 hct 100 V=
+w 208
+a 0 up 0:33 0 0 0 hln 100 V=
+s 820 530 820 580 197
+a 0 up 33 0 822 580 hlt 100 V=
+s 820 580 920 580 629
+a 0 up 33 0 920 579 hct 100 V=
+s 820 580 780 580 435
+w 626
+a 0 up 0:33 0 0 0 hln 100 V=
+s 1280 490 1280 710 298
+s 1190 490 1280 490 296
+s 1190 510 1190 490 294
+s 1280 710 290 710 300
+a 0 up 33 0 785 709 hct 100 V=
+s 290 570 290 660 181
+s 290 660 290 710 648
+s 310 660 290 660 646
+w 619
+a 0 up 0:33 0 0 0 hln 100 V=
+s 330 200 330 170 5
+s 330 170 350 170 340
+s 330 170 300 170 107
+s 300 410 750 410 111
+s 300 170 300 410 109
+a 0 up 33 0 302 290 hlt 100 V=
+w 79
+a 0 up 0:33 0 0 0 hln 100 V=
+s 710 170 770 170 39
+s 770 170 770 270 47
+s 770 270 710 270 49
+s 770 170 770 120 41
+s 770 120 450 120 43
+a 0 up 33 0 610 119 hct 100 V=
+s 450 120 450 190 659
+w 354
+a 0 up 0:33 0 0 0 hln 100 V=
+s 450 250 450 270 30
+s 560 170 530 170 34
+s 530 270 560 270 356
+s 530 170 530 270 36
+a 0 up 33 0 532 220 hlt 100 V=
+s 450 270 530 270 661
+w 91
+a 0 up 0:33 0 0 0 hln 100 V=
+s 650 300 880 300 70
+a 0 up 33 0 765 299 hct 100 V=
+s 880 300 880 230 72
+s 880 300 1000 300 82
+s 650 270 650 300 68
+s 650 270 680 270 57
+s 650 240 650 270 55
+s 880 300 880 370 84
+s 1040 370 1040 350 88
+s 880 370 1040 370 86
+s 590 270 650 270 28
+w 124
+a 0 up 0:33 0 0 0 hln 100 V=
+s 610 600 560 600 123
+s 560 530 560 600 132
+a 0 up 33 0 562 565 hlt 100 V=
+s 560 600 560 630 125
+w 585
+a 0 up 0:33 0 0 0 hln 100 V=
+s 1160 320 1080 320 360
+s 1160 390 1160 320 99
+s 960 390 1160 390 97
+s 960 340 960 390 95
+s 1000 340 960 340 93
+s 1150 430 1410 430 333
+s 1410 430 1410 690 449
+s 1150 510 1150 430 331
+s 1410 690 1140 690 118
+a 0 up 33 0 1275 689 hct 100 V=
+s 1140 690 1120 690 244
+s 1140 570 1140 690 265
+s 1120 690 980 690 559
+s 1120 660 1120 690 242
+s 980 620 980 690 229
+s 980 690 650 690 537
+s 650 690 650 610 591
+s 560 690 650 690 129
+s 560 670 560 690 127
+s 1410 320 1410 430 335
+s 1410 320 1160 320 663
+w 621
+a 0 up 0:33 0 0 0 hln 100 V=
+s 460 460 370 460 408
+s 370 530 370 460 173
+s 560 460 460 460 411
+s 460 460 460 490 153
+s 650 460 560 460 163
+s 560 490 560 460 137
+s 650 460 820 460 201
+s 650 450 650 460 373
+s 650 460 650 550 141
+s 820 460 940 460 437
+s 820 460 820 500 203
+s 940 460 1030 460 499
+s 940 460 940 490 220
+s 1240 460 1030 460 284
+a 0 up 33 0 1135 459 hct 100 V=
+s 1030 570 1030 460 261
+s 1240 520 1240 460 282
+s 1080 570 1030 570 259
+s 370 460 290 460 187
+s 290 460 290 530 633
+w 310
+a 0 up 0:33 0 0 0 hln 100 V=
+s 1170 470 1340 470 311
+a 0 up 33 0 1255 469 hct 100 V=
+s 1170 510 1170 470 309
+s 1340 470 1340 520 313
+w 147
+a 0 up 0:33 0 0 0 hln 100 V=
+s 610 560 460 560 148
+a 0 up 33 0 535 559 hct 100 V=
+s 460 530 460 560 146
+s 460 560 460 600 150
+w 412
+a 0 up 0:33 0 0 0 hln 100 V=
+s 370 560 370 660 175
+s 460 640 460 660 157
+s 460 660 370 660 159
+a 0 up 33 0 415 659 hct 100 V=
+s 370 660 340 660 644
+@junction
+j 370 270
++ s 4
++ w 315
+j 680 170
++ p 20 2
++ w 27
+j 680 270
++ p 21 1
++ w 91
+j 710 170
++ p 20 1
++ w 79
+j 710 270
++ p 21 2
++ w 79
+j 650 210
++ p 51 2
++ w 27
+j 650 170
++ w 27
++ w 27
+j 650 240
++ p 51 1
++ w 91
+j 650 270
++ w 91
++ w 91
+j 800 140
++ p 58 2
++ w 27
+j 880 230
++ p 63 A
++ w 91
+j 880 200
++ p 63 K
++ w 65
+j 840 140
++ p 58 1
++ w 65
+j 880 140
++ s 78
++ w 65
+j 770 170
++ w 79
++ w 79
+j 880 300
++ w 91
++ w 91
+j 1000 300
++ p 81 +
++ w 91
+j 1040 350
++ p 81 V-
++ w 91
+j 1040 290
++ p 81 V+
++ w 105
+j 1040 270
++ s 103
++ w 105
+j 390 170
++ p 337 2
++ w 316
+j 350 170
++ p 337 1
++ w 619
+j 590 270
++ p 19 1
++ w 91
+j 590 170
++ p 18 2
++ w 27
+j 560 270
++ p 19 2
++ w 354
+j 560 170
++ p 18 1
++ w 354
+j 530 270
++ w 354
++ w 354
+j 650 460
++ w 621
++ w 621
+j 560 460
++ w 621
++ w 621
+j 370 560
++ p 172 1
++ w 412
+j 370 530
++ p 172 2
++ w 621
+j 650 450
++ s 134
++ w 621
+j 460 490
++ p 144 2
++ w 621
+j 560 490
++ p 131 2
++ w 621
+j 460 460
++ w 621
++ w 621
+j 820 460
++ w 621
++ w 621
+j 1170 510
++ p 250 NO1
++ w 310
+j 1130 510
++ p 250 NO2
++ w 463
+j 1030 460
++ w 621
++ w 621
+j 1080 570
++ p 250 B
++ w 621
+j 1240 520
++ p 277 2
++ w 621
+j 1120 570
++ p 250 A
++ w 463
+j 1240 550
++ p 277 1
++ w 463
+j 1210 590
++ w 463
++ w 463
+j 940 490
++ p 216 2
++ w 621
+j 940 460
++ w 621
++ w 621
+j 940 530
++ p 216 1
++ w 223
+j 610 560
++ p 113 +
++ w 147
+j 460 530
++ p 144 1
++ w 147
+j 610 600
++ p 113 -
++ w 124
+j 560 530
++ p 131 1
++ w 124
+j 650 550
++ p 113 V+
++ w 621
+j 940 560
++ p 205 e
++ w 223
+j 940 540
++ w 223
++ w 223
+j 920 580
++ p 205 b
++ w 208
+j 560 630
++ p 122 2
++ w 124
+j 560 600
++ w 124
++ w 124
+j 460 600
++ p 145 2
++ w 147
+j 460 560
++ w 147
++ w 147
+j 460 640
++ p 145 1
++ w 412
+j 1120 620
++ p 239 c
++ w 463
+j 1120 590
++ w 463
++ w 463
+j 1020 640
++ p 215 1
++ w 236
+j 940 600
++ p 205 c
++ w 236
+j 1100 640
++ p 239 b
++ w 241
+j 1060 640
++ p 215 2
++ w 241
+j 1340 580
++ s 306
++ w 308
+j 1180 570
++ p 250 COM1
++ w 569
+j 1120 690
++ w 585
++ w 585
+j 980 690
++ w 585
++ w 585
+j 650 690
++ w 585
++ w 585
+j 1190 510
++ p 250 NC1
++ w 626
+j 790 410
++ p 106 2
++ w 569
+j 1140 690
++ w 585
++ w 585
+j 1080 320
++ p 81 OUT
++ w 585
+j 1000 340
++ p 81 -
++ w 585
+j 1160 320
++ w 585
++ w 585
+j 650 610
++ p 113 V-
++ w 585
+j 1140 570
++ p 250 COM2
++ w 585
+j 1120 660
++ p 239 e
++ w 585
+j 560 670
++ p 122 1
++ w 585
+j 1150 510
++ p 250 NC2
++ w 585
+j 1410 430
++ w 585
++ w 585
+j 330 170
++ w 619
++ w 619
+j 750 410
++ p 106 1
++ w 619
+j 370 460
++ w 621
++ w 621
+j 1340 550
++ p 628 2
++ w 308
+j 1340 520
++ p 628 1
++ w 310
+j 980 620
++ p 631 1
++ w 585
+j 980 580
++ p 631 2
++ w 223
+j 290 570
++ p 632 1
++ w 626
+j 290 530
++ p 632 2
++ w 621
+j 780 580
++ p 191 2
++ w 208
+j 820 580
++ w 208
++ w 208
+j 740 580
++ p 191 1
++ w 193
+j 690 580
++ p 113 OUT
++ w 193
+j 820 500
++ p 639 2
++ w 621
+j 820 530
++ p 639 1
++ w 208
+j 340 660
++ p 640 1
++ w 412
+j 370 660
++ w 412
++ w 412
+j 310 660
++ p 640 2
++ w 626
+j 290 660
++ w 626
++ w 626
+j 330 240
++ p 3 -
++ w 315
+j 330 200
++ p 3 +
++ w 619
+j 410 250
++ p 2 2
++ w 315
+j 450 250
++ p 2 4
++ w 354
+j 450 190
++ p 2 3
++ w 79
+j 410 190
++ p 2 1
++ w 316
+j 1340 520
++ p 671 pin1
++ p 628 1
+j 1340 520
++ p 671 pin1
++ w 310
+@attributes
+a 0 s 0:13 0 0 0 hln 100 PAGETITLE=
+a 0 s 0:13 0 0 0 hln 100 PAGENO=1
+a 0 s 0:13 0 0 0 hln 100 PAGESIZE=B
+a 0 s 0:13 0 0 0 hln 100 PAGECOUNT=1
+@graphics
